@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+  <div id="weather-app">
+    <div>
+      <input type="text" id="city-input" placeholder="London">
+      <button id="search-button">Search</button>
+    </div>
+    <div id="container">
+      <div id="left-side">
+        <div id="weather-data">
+          <p id="city">Vienna Weather</p>
+          <p id="date"></p>
+          <div id="iconTemp">
+            <img src="" id="weatherImg">
+            <p id="temperature"></p>
+          </div>
+          <div class="feelType">
+            <p id="weathertype"></p>
+            <p id="feelsLike"></p>
+          </div>
+          <div id="detailsContainer">
+            <div>
+              Humidity: 
+              <p id="humidity"></p>
+            </div>
+            <div>
+              Windspeed:
+              <p id="windspeed"></p>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+      </div>
+      <div id="right-side">
+        <canvas id="chart"></canvas>
+        <div id="tabs">
+          <button class="tab" id="tab-1">Day 1</button>
+          <button class="tab" id="tab-2">Day 2</button>
+          <button class="tab" id="tab-3">Day 3</button>
+          <button class="tab" id="tab-4">Day 4</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="utils.js" type="module" ></script>
+  <script src="weather.js" type="module" ></script>
+</body>
+</html>
